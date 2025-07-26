@@ -6,13 +6,96 @@
   list-style-type:none;
   text-decoration:none;
 }
-body{
-  background-color:#1B1811;
+html{
+  font-size:10px;
 }
+body{
+  background-color:#000000;
+}
+/* Header section css starts here */
 header{
   width:100%;
+  min-height:100px;
   border:2px white solid;
   display:flex;
   align-items:center;
   justify-content: space-between;
 }
+h2 a{
+  text-transform: uppercase;
+  color:white;
+  margin-left:60px;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+/*navbar css starts here*/
+#navbar ul{
+  width:660px;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+}
+#navbar li a{
+  color:white;
+  font-size:1.8rem;
+  font-family: "Poppins",Arial,sans-serif;
+  transition: border 0.3s ease-in;
+}
+#navbar li:first-child a{
+  color:#ffbd39;
+}
+#navbar li a:hover{
+  border:2px solid #ffbd39;
+  padding:1rem 2rem;
+  margin:1em;
+  
+}
+.btn{
+  background-color: #000000;
+  color:white;
+  border:2px solid #ffbd39;
+  margin-right:6rem;
+  padding: 1rem 1.8rem;
+  font-size:1.6rem;
+  border-radius:1rem;
+  font-family:"Poppins",Arial,sans-serif;
+  font-weighT:500;
+}
+.btn:hover{
+  background-color:#ffbd39;
+  color:#000000;
+  border:none;
+}
+/*navbar css ends here*/
+/* Header section css ends here */
+
+/* Main section css starts  here */
+main{
+  display:grid;
+  grid-template-columns:1fr;
+  grid-template-rows: repeat(6,auto);
+  gap:20px
+}
+.home{
+  margin:80px 0px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+img{
+  height:400px;
+  width:100%;
+  border-radius: 50%;
+  border: 2px solid #ffbd39;
+  padding:12px;
+  transition:0.4s;
+}
+img:hover{
+  transform:scale(1.2);
+}
+.content-section h1{
+  margin:6rem;
+  font-size:8rem;
+  color:white;
+}
+
