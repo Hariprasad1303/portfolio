@@ -177,22 +177,100 @@ main{
 }
 .about-me-logo{
   width:100%;
-  height:400px;
+  height:100%;
   filter: brightness(100%) grayscale(100%);
   object-fit: cover;
   border-radius:1.5rem;
-}
- 
+} 
 .experience{
   grid-area:experience;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: 0.4s ease-in;
+}
+.experience:hover{
+  background: black;
+  border:1px solid #ffbd39;
+  transform: scale(1.03);
+}
+.experience img{
+  display: block;
+  margin: 1.5rem auto;
+  width:5rem;
+  height: 5rem;
+}
+.experience h3{
+  font-size:3.2rem;
+  color:white;
+  text-align: center;
+  margin-bottom:2rem;
+}
+.exp{
+  color:white;
+  font-size:1.8rem;
+  font-weight:600;
+  text-align:center;
+  margin-bottom:1rem;
+  letter-spacing: 2px;
+}
+.job-title{
+    color:white;
+    font-size:2rem;
+    text-align:center;
+    font-weight:600;
+    letter-spacing:2px;
+    margin-bottom:1rem;
 }
 .education{
   grid-area:education;
   background-color: rgba(255, 255, 255, 0.1);
-
+  transition: 0.4s ease-in;
+}
+.education:hover{
+  background-color:black;
+  border:1px solid #ffbd39;
+  transform: scale(1.03); 
+}
+.education h3{
+  font-size:3.2rem;
+  color:white;
+  text-align:center;
+  margin-bottom:2rem;
+}
+.education img{
+  display: block;
+  margin:1.5rem auto;
+  height: 5rem;
+  width: 5rem;
+}
+.degree{
+  font-size:1.8rem;
+  color:white;
+  text-align:center;
+  margin-bottom:1rem;
+  font-weight:600;
+  letter-spacing:3px;
+}
+.domain{
+  font-size:1.8rem;
+  color:white;
+  text-align:center;
+  font-weight:600;
+  letter-spacing:3px;
 }
 .personal-description{
   grid-area:personal-description;
   background-color: rgba(255, 255, 255, 0.1);
+}
+.personal-description h3{
+  color:white;
+  font-size:2.2rem;
+  padding: 1.5rem;
+  font-weight: 800;
+}
+.personal-description p{
+  color:white;
+  font-size:1.6rem;
+  padding:0rem 1.5rem;
+  margin-bottom:1.3rem;
+  font-weight: 100;
 }
