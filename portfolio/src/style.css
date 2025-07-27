@@ -12,6 +12,10 @@ html{
 body{
   background-color:#000000;
 }
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 /* Header section css starts here */
 header{
   position:fixed;
@@ -91,7 +95,7 @@ main{
   padding:12px;
   transition:0.4s;
 }
-img:hover{
+.main:hover{
   transform:scale(1.2);
 }
 .content-section{
@@ -148,31 +152,47 @@ img:hover{
 /*Abot section css starts here*/
 .about{
   grid-area:about;
-  background-color:cornflowerblue;
+  max-width:80%;
+  margin:auto;
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows:auto 1fr 1fr;
-  grid-template-areas:"heading heading heading"
+  grid-template-areas:"heading1 heading1 heading1"
                       "image-about experience education"
                       "image-about  personal-description personal-description";
+  gap:20px;                    
 }
 .heading1{
-  grid-area:heading;
-  background-color: wheat;
+  grid-area:heading1;
+  padding: 30px;
+  margin-bottom:4rem;
+}
+.heading1 h2{
+  font-size:5rem;
+  text-align: center;
+  font-weight: 900;
 }
 .image-about{
   grid-area:image-about;
-  background-color: burlywood;
 }
+.about-me-logo{
+  width:100%;
+  height:400px;
+  filter: brightness(100%) grayscale(100%);
+  object-fit: cover;
+  border-radius:1.5rem;
+}
+ 
 .experience{
   grid-area:experience;
-  background-color: aquamarine;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .education{
   grid-area:education;
-  background-color:cadetblue;
+  background-color: rgba(255, 255, 255, 0.1);
+
 }
 .personal-description{
   grid-area:personal-description;
-  background-color:crimson;
+  background-color: rgba(255, 255, 255, 0.1);
 }
