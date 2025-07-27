@@ -2,7 +2,7 @@
 *{
   margin:0;
   padding:0;
-  box-sizing:border-box;
+  box-sizing: border-box;
   list-style-type:none;
   text-decoration:none;
 }
@@ -14,9 +14,10 @@ body{
 }
 /* Header section css starts here */
 header{
+  position:fixed;
+  top:0;
   width:100%;
   min-height:100px;
-  border:2px white solid;
   display:flex;
   align-items:center;
   justify-content: space-between;
@@ -25,7 +26,7 @@ h2 a{
   text-transform: uppercase;
   color:white;
   margin-left:60px;
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   font-weight: bold;
 }
 /*navbar css starts here*/
@@ -39,16 +40,9 @@ h2 a{
   color:white;
   font-size:1.8rem;
   font-family: "Poppins",Arial,sans-serif;
-  transition: border 0.3s ease-in;
 }
 #navbar li:first-child a{
   color:#ffbd39;
-}
-#navbar li a:hover{
-  border:2px solid #ffbd39;
-  padding:1rem 2rem;
-  margin:1em;
-  
 }
 .btn{
   background-color: #000000;
@@ -60,30 +54,37 @@ h2 a{
   border-radius:1rem;
   font-family:"Poppins",Arial,sans-serif;
   font-weighT:500;
-}
-.btn:hover{
-  background-color:#ffbd39;
-  color:#000000;
-  border:none;
+  transition:0.8s;
+  cursor:pointer;
 }
 /*navbar css ends here*/
 /* Header section css ends here */
 
 /* Main section css starts  here */
 main{
+  margin-top:8rem;
   display:grid;
   grid-template-columns:1fr;
   grid-template-rows: repeat(6,auto);
-  gap:20px
+  grid-template-areas: "home"
+                       "about"
+                        "service"
+                        "skills"
+                        "projects"
+                        "contact";
+  gap:2rem;
 }
 .home{
+  grid-area: home;
   margin:80px 0px;
   display:flex;
   align-items:center;
-  justify-content:center;
+  justify-content:flex-start;
+  padding:8rem 10rem;
+  gap:4rem;
 }
-img{
-  height:400px;
+.main{
+  height:350px;
   width:100%;
   border-radius: 50%;
   border: 2px solid #ffbd39;
@@ -93,9 +94,85 @@ img{
 img:hover{
   transform:scale(1.2);
 }
-.content-section h1{
-  margin:6rem;
-  font-size:8rem;
-  color:white;
+.content-section{
+  padding:0;
+  transform: translate(100px,-40px);
 }
-
+.content-section h1{
+  color: white;
+  font-size: 8rem;
+  margin-bottom:2.5rem;
+}
+.content-section h1 span{
+  color: #ffbd39;
+}
+.content-section p{
+  color:white;
+  font-size: 4em;
+  margin-bottom:2.5rem;
+}
+.content-section button{
+  margin-right:2rem;
+}
+#hiring{
+  border: 1px solid #ffbd39;
+  padding:1.6rem 2.4rem ;
+  background-color: #ffbd39;
+  border-radius: 2.4rem;
+  font-size: 1.6rem;
+  text-transform:uppercase;
+  font-weight:600;
+  letter-spacing: 2px;
+}
+#work{
+  background-color:#000000;
+  color:white;
+  border:2px solid grey;
+  padding:1.6rem 2.4rem;
+  border-radius:2.4rem;
+  letter-spacing:2px;
+  font-weight:600;
+  text-transform:uppercase;
+}
+#work:hover{
+  background-color: #ffbd39;
+  color:#000000;
+  border:2px solid white;
+  font-weight: 600;
+}
+#hiring:hover{
+  background-color: #000000;
+  color:white;
+  border:2px solid #ffbd39;
+}
+/*Abot section css starts here*/
+.about{
+  grid-area:about;
+  background-color:cornflowerblue;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:auto 1fr 1fr;
+  grid-template-areas:"heading heading heading"
+                      "image-about experience education"
+                      "image-about  personal-description personal-description";
+}
+.heading1{
+  grid-area:heading;
+  background-color: wheat;
+}
+.image-about{
+  grid-area:image-about;
+  background-color: burlywood;
+}
+.experience{
+  grid-area:experience;
+  background-color: aquamarine;
+}
+.education{
+  grid-area:education;
+  background-color:cadetblue;
+}
+.personal-description{
+  grid-area:personal-description;
+  background-color:crimson;
+}
