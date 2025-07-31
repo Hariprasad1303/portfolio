@@ -470,9 +470,9 @@ textarea {
 }
 /*contact section ends here*/
 #service {
-  width: 100%;
+  width: 80%;
   height: auto;
-  margin-top: 8rem;
+  margin: 8rem auto;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-template-areas:
@@ -487,7 +487,7 @@ textarea {
   text-align: center;
   font-size: 5rem;
   padding: 3rem;
-  color:#ffbd39;
+  color: #ffbd39;
 }
 .service-content {
   display: grid;
@@ -497,33 +497,74 @@ textarea {
   grid-template-areas:
     "service1 service2 service3"
     "service4 service5 service6";
+  gap: 3rem;
+  margin-top: 4rem;
 }
-.service{
-  display:flex;
-  justify-content:center;
-  align-items:center;
+.service {
+  opacity: 1;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: 0.4s ease-in;
+}
+/*Hover effects starts here*/
+.service:hover{
+  background-color:#ffbd39;
+  transform: translateY(-10px);
+  opacity:1;
+}
+.service:hover .line{
+  background-color: black;
+} 
+.service:hover h3,.service:hover i{
+  color:black;
+}
+.service:not(hover){
+  background-color:rgba(255, 255, 255, 0.1);
+  opacity:0.34;
+}
+/*Hover effects ends here*/
+.service h3 {
+  padding: 3rem 0rem;
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.design-icon,
+.code-icon,
+.photo-icon,
+.test-icon,
+.data-icon {
+  color: #ffbd39;
+  font-size: 5rem;
+  padding-top: 4rem;
+}
+.line {
+  height: 0.3rem;
+  background-color: #ffbd39;
+  width: 4rem;
+  margin-bottom: 3rem;
 }
 .service1 {
   grid-area: service1;
-  background-color: #ee2a7b;
 }
 .service2 {
   grid-area: service2;
-  background-color: crimson;
 }
 .service3 {
   grid-area: service3;
-  background-color: cadetblue;
 }
 .service4 {
   grid-area: service4;
-  background-color: rgb(19, 152, 23);
 }
 .service5 {
   grid-area: service5;
-  background-color: rgb(190, 74, 97);
 }
 .service6 {
   grid-area: service6;
-  background-color: rgb(210, 137, 152);
 }
