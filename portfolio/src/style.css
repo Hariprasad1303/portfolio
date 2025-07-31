@@ -81,15 +81,14 @@ main {
     "contact";
   gap: 2rem;
 }
-.home {
+#home {
   max-width: 90%;
   grid-area: home;
   margin: 80px 0px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content:space-evenly;
   padding: 8rem 10rem;
-  gap: 2rem;
 }
 .main {
   height: 350px;
@@ -154,7 +153,7 @@ main {
   border: 2px solid #ffbd39;
 }
 /*About section css starts here*/
-.about {
+#about {
   grid-area: about;
   max-width: 80%;
   margin: auto;
@@ -268,10 +267,6 @@ main {
   background-color: rgba(255, 255, 255, 0.1);
   transition: 0.4s ease-in;
 }
-.personal-description:hover {
-  background-color: black;
-  border: 2px solid #ffbd39;
-}
 .personal-description h3 {
   color: white;
   font-size: 2.2rem;
@@ -286,9 +281,8 @@ main {
   font-weight: 200;
 }
 /*contact section starts here*/
-.contact {
+#contact {
   max-width: 100%;
-  border: 2px solid red;
   margin: 0rem auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -296,10 +290,10 @@ main {
   grid-template-areas:
     "heading heading"
     "contact-left-section contact-right-section";
+  row-gap: 30px;  
 }
 .contact-heading {
   grid-area: heading;
-  border: 2px solid red;
 }
 .contact-heading h2 {
   text-align: center;
@@ -309,7 +303,6 @@ main {
 }
 .contact-left-section {
   grid-area: contact-left-section;
-  border: 2px solid red;
   /* background-color:lightblue; */
   /* border: solid red; */
 }
@@ -383,8 +376,8 @@ main {
 }
 .github:hover {
   color: black;
-  background-color:white;
-  transform:translateY(-25px);
+  background-color: white;
+  transform: translateY(-25px);
 }
 .linkedin {
   color: #ffbd39;
@@ -392,33 +385,33 @@ main {
   font-size: 3.2rem;
   transition: 0.4s ease-in;
 }
-.linkedin:hover{
+.linkedin:hover {
   background-color: #fff;
-  color: #0A66C2;
+  color: #0a66c2;
   padding: 0.4rem;
-  border-radius:1rem;
-  transform: translateY(-25px); 
+  border-radius: 1rem;
+  transform: translateY(-25px);
 }
 .instagram {
   color: #ffbd39;
   margin: 0rem 2rem;
   font-size: 3.2rem;
 }
-.instagram:hover{
-  color:  #ee2a7b;
+.instagram:hover {
+  color: #ee2a7b;
 }
 .twitter {
   color: #ffbd39;
   margin: 0rem 2rem;
   font-size: 3.2rem;
-  transition: 0.4s ease-in;;
+  transition: 0.4s ease-in;
 }
-.twitter:hover{
+.twitter:hover {
   background-color: #fff;
-  color: #1DA1F2;
-  padding:2px;
+  color: #1da1f2;
+  padding: 2px;
   border-radius: 1.5rem;
-  transform: translateY(-25px); 
+  transform: translateY(-25px);
 }
 .contact-right-section {
   grid-area: contact-right-section;
@@ -430,17 +423,41 @@ main {
   align-items: center;
 }
 form {
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
+}
+form div {
+  width: 80%;
+  margin:1rem
 }
 label {
   display: block;
   color: white;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
-input,textarea{
+input{
+  border:none;
+  color:white;
+  font-size:1.8rem;
+  padding:10px;
   width:100%;
+  height:4.5rem;
+  background-color:rgba(255, 255, 255, 0.1);
+}
+textarea{
+  width:100%;
+  height:18rem;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+#btn{
+  width:100%;
+  padding:1rem;
+  border-radius:1.5rem ;
 }

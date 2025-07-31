@@ -28,13 +28,13 @@
       <h2><a href="#">Hariprasad</a></h2>
       <nav id="navbar">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#about-me">About</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#">Resume</a></li>
           <li><a href="#">Service</a></li>
           <li><a href="#">Skills</a></li>
           <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <a href="images/HARIPRASAD_VV_CV (1).pdf" class="btn" download
@@ -44,7 +44,7 @@
     <!-- Header section ends here -->
     <!-- Main section starts here  -->
     <main>
-      <section class="home">
+      <section id="home">
         <div class="image-section">
           <img
             src="images/hari.jpeg"
@@ -59,7 +59,7 @@
           <button id="work">Works</button>
         </div>
       </section>
-      <section class="about">
+      <section id="about">
         <div class="heading1">
           <h2 id="about-me">About me</h2>
         </div>
@@ -105,10 +105,12 @@
           </p>
         </div>
       </section>
-      <section class="service"></section>
+      <section id="service">
+
+      </section>
       <section class="skills"></section>
       <section class="projects"></section>
-      <section class="contact">
+      <section id="contact">
         <div class="contact-heading">
           <h2>Get in Touch</h2>
         </div>
@@ -150,35 +152,34 @@
         </div>
         <div class="contact-right-section">
           <form action="#">
-
             <!-- Name -->
-           <div>
+            <div>
               <label for="name">Your Name</label>
               <input type="text" id="name" required />
-           </div>
+            </div>
 
             <!-- Email   -->
-          <div>
+            <div>
               <label for="email">Your Email</label>
               <input type="email" id="email" required />
-          </div>
+            </div>
 
             <!-- Subject -->
-         <div>
+            <div>
               <label for="subject">Subject</label>
               <input type="text" id="subject" />
-         </div>
+            </div>
 
             <!-- Message -->
-          <div>
-                        <label for="message">Message</label>
-                        <textarea id="message"></textarea>
-          </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message"></textarea>
+            </div>
 
-          <div>
+            <div>
               <!-- Button -->
-              <button type="submit">Sent message</button>
-          </div>
+              <button type="submit" id="btn">Sent message</button>
+            </div>
           </form>
         </div>
       </section>
