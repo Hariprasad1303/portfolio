@@ -46,9 +46,10 @@ h2 a {
   font-size: 2rem;
   font-family: "Poppins", Arial, sans-serif;
   margin: 2rem;
+  transition: border-bottom 0.4s ease-in;
 }
-#navbar li:first-child a {
-  color: #ffbd39;
+#navbar li:hover a {
+  border-bottom: 4px solid #ffbd39;
 }
 .btn {
   background-color: #000000;
@@ -87,7 +88,7 @@ main {
   margin: 80px 0px;
   display: flex;
   align-items: center;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   padding: 8rem 10rem;
 }
 .main {
@@ -280,6 +281,7 @@ main {
   margin-bottom: 1.3rem;
   font-weight: 200;
 }
+/*about section  ends here*/
 /*contact section starts here*/
 #contact {
   max-width: 100%;
@@ -290,7 +292,7 @@ main {
   grid-template-areas:
     "heading heading"
     "contact-left-section contact-right-section";
-  row-gap: 30px;  
+  gap: 2.5rem;
 }
 .contact-heading {
   grid-area: heading;
@@ -303,14 +305,15 @@ main {
 }
 .contact-left-section {
   grid-area: contact-left-section;
-  /* background-color:lightblue; */
-  /* border: solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .contact-left-section h3 {
   font-size: 3rem;
   font-weight: 900;
   color: white;
-  margin: 2.5rem;
+  margin: 0rem 2.5rem;
 }
 .contact-left-section > p {
   font-size: 2rem;
@@ -432,32 +435,95 @@ form {
 }
 form div {
   width: 80%;
-  margin:1rem
+  margin: 1rem;
+}
+.input {
+  border: none;
+  border-radius: 0.8rem;
+  color: white;
+  font-size: 1.8rem;
+  padding: 0.5rem;
+  width: 100%;
+  height: 4.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 label {
   display: block;
   color: white;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 1px;
+  pointer-events: none;
 }
-input{
-  border:none;
-  color:white;
-  font-size:1.8rem;
-  padding:10px;
-  width:100%;
-  height:4.5rem;
-  background-color:rgba(255, 255, 255, 0.1);
-}
-textarea{
-  width:100%;
-  height:18rem;
+textarea {
+  font-size: 1.8rem;
+  color: white;
+  width: 100%;
+  height: 18rem;
   background-color: rgba(255, 255, 255, 0.1);
 }
-#btn{
-  width:100%;
-  padding:1rem;
-  border-radius:1.5rem ;
+#btn {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1.5rem;
+}
+/*contact section ends here*/
+#service {
+  width: 100%;
+  height: auto;
+  margin-top: 8rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "service-heading"
+    "service-content";
+}
+.service-heading {
+  grid-area: service-heading;
+  border: solid;
+}
+.service-heading h2 {
+  text-align: center;
+  font-size: 5rem;
+  padding: 3rem;
+  color:#ffbd39;
+}
+.service-content {
+  display: grid;
+  grid-area: service-content;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "service1 service2 service3"
+    "service4 service5 service6";
+}
+.service{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.service1 {
+  grid-area: service1;
+  background-color: #ee2a7b;
+}
+.service2 {
+  grid-area: service2;
+  background-color: crimson;
+}
+.service3 {
+  grid-area: service3;
+  background-color: cadetblue;
+}
+.service4 {
+  grid-area: service4;
+  background-color: rgb(19, 152, 23);
+}
+.service5 {
+  grid-area: service5;
+  background-color: rgb(190, 74, 97);
+}
+.service6 {
+  grid-area: service6;
+  background-color: rgb(210, 137, 152);
 }

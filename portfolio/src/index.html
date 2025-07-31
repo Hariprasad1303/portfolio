@@ -105,9 +105,6 @@
           </p>
         </div>
       </section>
-      <section id="service">
-
-      </section>
       <section class="skills"></section>
       <section class="projects"></section>
       <section id="contact">
@@ -153,34 +150,64 @@
         <div class="contact-right-section">
           <form action="#">
             <!-- Name -->
-            <div>
+            <div class="element">
               <label for="name">Your Name</label>
-              <input type="text" id="name" required />
+              <input type="text" id="name" required class="input" />
             </div>
 
             <!-- Email   -->
-            <div>
+            <div class="element">
               <label for="email">Your Email</label>
-              <input type="email" id="email" required />
+              <input type="email" id="email" class="input" />
             </div>
 
             <!-- Subject -->
-            <div>
+            <div class="element">
               <label for="subject">Subject</label>
-              <input type="text" id="subject" />
+              <input type="text" id="subject" class="input" />
             </div>
 
             <!-- Message -->
-            <div>
+            <div class="element">
               <label for="message">Message</label>
               <textarea id="message"></textarea>
             </div>
 
+            <!-- Button -->
             <div>
-              <!-- Button -->
               <button type="submit" id="btn">Sent message</button>
             </div>
           </form>
+        </div>
+      </section>
+      <section id="service">
+        <div class="service-heading">
+          <h2>Services</h2>
+        </div>
+        <div class="service-content">
+          <div class="service service1">
+            <h3>Web design</h3>
+            <i class="fa-solid fa-palette design-icon"></i>
+          </div>
+          <div class="service service2">
+            <h3>Web Development</h3>
+            <i class="fa-solid fa-code code-icon"></i>
+          </div>
+          <div class="service service3">
+            <h3>Photpography</h3>
+          </div>
+          <div class="service service4">
+            <h3>App development</h3>
+            <i class="fa-solid fa-code code-icon"></i>
+          </div>
+          <div class="service service5">
+            <h3>Data analyst</h3>
+            <i class="fa-solid fa-chart-simple data-icon"></i>
+          </div>
+          <div class="service service6">
+            <h3>Software Testing</h3>
+            <i class="fa-solid fa-microscope test-icon"></i>
+          </div>
         </div>
       </section>
     </main>
