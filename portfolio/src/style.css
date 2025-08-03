@@ -510,20 +510,21 @@ textarea {
   transition: 0.4s ease-in;
 }
 /*Hover effects starts here*/
-.service:hover{
-  background-color:#ffbd39;
+.service:hover {
+  background-color: #ffbd39;
   transform: translateY(-10px);
-  opacity:1;
+  opacity: 1;
 }
-.service:hover .line{
+.service:hover .line {
   background-color: black;
-} 
-.service:hover h3,.service:hover i{
-  color:black;
 }
-.service:not(:hover){
-  background-color:rgba(255, 255, 255, 0.1);
-  opacity:0.5;
+.service:hover h3,
+.service:hover i {
+  color: black;
+}
+.service:not(:hover) {
+  background-color: rgba(255, 255, 255, 0.1);
+  opacity: 0.5;
 }
 /*Hover effects ends here*/
 .service h3 {
@@ -568,93 +569,165 @@ textarea {
 .service6 {
   grid-area: service6;
 }
-#skills{
-  width:80%;
-  margin:8rem auto;
-  height:auto;
-  display:grid;
+#skills {
+  width: 80%;
+  margin: 8rem auto;
+  height: auto;
+  display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "skills-heading"
-                       "skills-container";
- gap: 2rem;                      
+  grid-template-areas:
+    "skills-heading"
+    "skills-container";
+  gap: 2rem;
 }
-.skills-heading{
+.skills-heading {
   grid-area: skills-heading;
-  background-color:#ee2a7b;
 }
-.skills-heading h2{
+.skills-heading h2 {
   text-align: center;
   font-size: 5rem;
-  color:white;
-  padding:4rem;
+  color: white;
+  padding: 4rem;
 }
-.skills-container{
-  border:1px solid white;
-  width:100%;
-  height:auto;
+.skills-container {
+  width: 100%;
+  height: auto;
   position: relative;
-  grid-area:skills-container;
+  grid-area: skills-container;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas:"card1 card2"
-                      "card3 card4";
-  gap:2rem;                    
+  grid-template-areas:
+    "card1 card2"
+    "card3 card4";
+  gap: 1rem;
 }
-.card1{
-  position:relative;
+.card1,.card2,.card3,.card4{
+  position: relative;
   height: 250px;
-  width:80%;
-  margin:4rem auto;
+  width: 80%;
+  margin: 4rem auto;
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid white;
   transform-style: preserve-3d;
   transition: all 0.8s ease-in;
   color: #ffbd39;
 }
-.card1:hover{
+.card1:hover,.card2:hover,.card3:hover,.card4:hover{
   transform: rotateY(180deg);
 }
-.frontface{
-  display:flex;
+.frontface {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position:absolute;
-  height:100%;
-  width:100%;
-  backface-visibility:hidden;
-} 
-.frontface h3{
-  font-size:4rem;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+.frontface h3 {
+  font-size: 4rem;
   text-transform: capitalize;
-  margin-bottom:2rem;
+  margin-bottom: 2rem;
 }
-.proficency{
-  font-size:3rem;
-  font-weight:800;
-  margin-bottom:2rem;
+.proficency {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
 }
-.frontface>p{
-  font-size:2.4rem;
+.frontface > p {
+  font-size: 2.4rem;
 }
-.backface{
-  position:absolute;
-  height:100%;
-  width:100%;
-  backface-visibility:hidden;
+.backface {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
   transform: rotateY(180deg);
 }
-.progressbar{
-  position:absolute;
-  width:100%;
-  height:100%;
-}
 .bars{
+  width:70%;
+  position:relative;
   display:flex;
   justify-content: space-between;
   align-items:center;
+  padding:1rem 0px;
+  margin:2rem auto;
 }
-
-
+.barpercent,.basehead{
+  font-size:2rem;
+  margin-bottom:1rem;
+  font-weight:800;
+  text-transform: capitalize;
+}
+.basebar{
+  position:absolute;
+  width:100%;
+  height:1rem;
+  background-color:black;
+  bottom:0;
+}
+.htmlbar{
+  width:90%;
+  background-color:#E34C26;
+}
+.cssbar{
+  width:85%;
+  background-color:#264DE4;
+}
+.jsbar{
+  width:50%;
+  background-color: #F7DF1E;
+}
+.nodebar{
+  width:75%;
+  background-color: #68a063;
+}
+.expressbar{
+  width:70%;
+ background-color: #F7DF1E; 
+}
+#html,#htmlperc{
+  color:#E34C26;
+}
+#css,#cssperc{
+  color:#264DE4;
+}
+#js,#jsperc{
+  color:#F7DF1E;
+}
+#node,#nodeperc{
+  color:#68a063;
+}
+#exp,#expperc{
+  color:#F7DF1E;
+}
+/* .bars{
+  width:70%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 1rem 0px;
+}
+.basehead,
+.barpercent {
+  font-weight: 500;
+  font-size: 2.3rem;
+  margin-bottom: 1px;
+}
+.basebar {
+  width: 100%;
+  height: 0.5rem;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  margin-top: 10px;
+}
+.htmlbar {
+  width: 93%;
+  background-color:#ffbd39;
+} */
