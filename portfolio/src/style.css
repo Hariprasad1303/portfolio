@@ -414,7 +414,7 @@ main {
   color: #1da1f2;
   padding: 2px;
   border-radius: 1.5rem;
-  transform: translateY(-25px);
+  transform: translateY(-24px);
 }
 .contact-right-section {
   grid-area: contact-right-section;
