@@ -689,6 +689,30 @@ textarea {
   width:70%;
  background-color: #F7DF1E; 
 }
+.dbbar{
+  width:60%;
+  background-color: #00684A;
+}
+.reactbar{
+  width:78%;
+  background-color:#61DBFB;
+}
+.angularbar{
+  width:85%;
+  background-color: #a6120d;;
+}
+.vuebar{
+  width:65%;
+  background-color:#41B883;
+}
+.sqlbar{
+  width:65%;
+  background-color: #F29111;
+}
+.postbar{
+  width:70%;
+  background-color:#0064a5;
+}
 #html,#htmlperc{
   color:#E34C26;
 }
@@ -704,30 +728,21 @@ textarea {
 #exp,#expperc{
   color:#F7DF1E;
 }
-/* .bars{
-  width:70%;
-  margin: 2rem auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  padding: 1rem 0px;
+#db,#dbperc{
+  color: #00684A;
 }
-.basehead,
-.barpercent {
-  font-weight: 500;
-  font-size: 2.3rem;
-  margin-bottom: 1px;
+#react,#reactperc{
+  color:#61DBFB;
 }
-.basebar {
-  width: 100%;
-  height: 0.5rem;
-  background-color: black;
-  position: absolute;
-  bottom: 0;
-  margin-top: 10px;
+#angular,#angularperc{
+  color:#a6120d;
 }
-.htmlbar {
-  width: 93%;
-  background-color:#ffbd39;
-} */
+#vue,#vueperc{
+  color:#41B883;
+}
+#sql,#sqlperc{
+  color:#F29111;
+}
+#post,#postperc{
+  color:#0064a5;
+}
