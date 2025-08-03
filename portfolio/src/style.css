@@ -568,3 +568,85 @@ textarea {
 .service6 {
   grid-area: service6;
 }
+#skills{
+  width:80%;
+  margin:8rem auto;
+  height:auto;
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "skills-heading"
+                       "skills-container";
+ gap: 2rem;                      
+}
+.skills-heading{
+  grid-area: skills-heading;
+  background-color:#ee2a7b;
+}
+.skills-heading h2{
+  text-align: center;
+  font-size: 5rem;
+  color:white;
+  padding:4rem;
+}
+.skills-container{
+  border:1px solid white;
+  width:100%;
+  height:auto;
+  position: relative;
+  grid-area:skills-container;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:"card1 card2"
+                      "card3 card4";
+  gap:2rem;                    
+}
+.card1{
+  position:relative;
+  height: 250px;
+  width:80%;
+  margin:4rem auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease-in;
+  color: #ffbd39;
+}
+.card1:hover{
+  transform: rotateY(180deg);
+}
+.frontface{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  height:100%;
+  width:100%;
+  backface-visibility:hidden;
+} 
+.frontface h2{
+  font-size:3.5rem;
+  font-weight:800;
+  margin-bottom:3rem;
+  text-transform: capitalize;
+}
+.proficency{
+  font-size:2.4rem;
+  font-weight:800;
+  margin-bottom:2rem;
+}
+.frontface>p{
+  font-size:1.8rem;
+}
+.backface{
+  position:absolute;
+  height:100%;
+  width:100%;
+  backface-visibility:hidden;
+  transform: rotateY(180deg);
+}
+
+
+
