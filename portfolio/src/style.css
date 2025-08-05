@@ -569,6 +569,7 @@ textarea {
 .service6 {
   grid-area: service6;
 }
+/*Skill section starts here*/
 #skills {
   width: 80%;
   margin: 8rem auto;
@@ -603,7 +604,10 @@ textarea {
     "card3 card4";
   gap: 1rem;
 }
-.card1,.card2,.card3,.card4{
+.card1,
+.card2,
+.card3,
+.card4 {
   position: relative;
   height: 250px;
   width: 80%;
@@ -614,7 +618,10 @@ textarea {
   transition: all 0.8s ease-in;
   color: #ffbd39;
 }
-.card1:hover,.card2:hover,.card3:hover,.card4:hover{
+.card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover {
   transform: rotateY(180deg);
 }
 .frontface {
@@ -647,102 +654,179 @@ textarea {
   backface-visibility: hidden;
   transform: rotateY(180deg);
 }
-.bars{
-  width:70%;
-  position:relative;
-  display:flex;
+.bars {
+  width: 70%;
+  position: relative;
+  display: flex;
   justify-content: space-between;
-  align-items:center;
-  padding:1rem 0px;
-  margin:2rem auto;
+  align-items: center;
+  padding: 1rem 0px;
+  margin: 2rem auto;
 }
-.barpercent,.basehead{
-  font-size:2rem;
-  margin-bottom:1rem;
-  font-weight:800;
+.barpercent,
+.basehead {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
   text-transform: capitalize;
 }
-.basebar{
-  position:absolute;
-  width:100%;
-  height:1rem;
-  background-color:black;
-  bottom:0;
+.basebar {
+  position: absolute;
+  width: 100%;
+  height: 1rem;
+  background-color: black;
+  bottom: 0;
 }
-.htmlbar{
-  width:90%;
-  background-color:#E34C26;
+.htmlbar {
+  width: 90%;
+  background-color: #e34c26;
 }
-.cssbar{
-  width:85%;
-  background-color:#264DE4;
+.cssbar {
+  width: 85%;
+  background-color: #264de4;
 }
-.jsbar{
-  width:50%;
-  background-color: #F7DF1E;
+.jsbar {
+  width: 50%;
+  background-color: #f7df1e;
 }
-.nodebar{
-  width:75%;
+.nodebar {
+  width: 75%;
   background-color: #68a063;
 }
-.expressbar{
-  width:70%;
- background-color: #F7DF1E; 
+.expressbar {
+  width: 70%;
+  background-color: #f7df1e;
 }
-.dbbar{
-  width:60%;
-  background-color: #00684A;
+.dbbar {
+  width: 60%;
+  background-color: #00684a;
 }
-.reactbar{
-  width:78%;
-  background-color:#61DBFB;
+.reactbar {
+  width: 78%;
+  background-color: #61dbfb;
 }
-.angularbar{
-  width:85%;
-  background-color: #a6120d;;
+.angularbar {
+  width: 85%;
+  background-color: #a6120d;
 }
-.vuebar{
-  width:65%;
-  background-color:#41B883;
+.vuebar {
+  width: 65%;
+  background-color: #41b883;
 }
-.sqlbar{
-  width:65%;
-  background-color: #F29111;
+.sqlbar {
+  width: 65%;
+  background-color: #f29111;
 }
-.postbar{
-  width:70%;
-  background-color:#0064a5;
+.postbar {
+  width: 70%;
+  background-color: #0064a5;
 }
-#html,#htmlperc{
-  color:#E34C26;
+#html,
+#htmlperc {
+  color: #e34c26;
 }
-#css,#cssperc{
-  color:#264DE4;
+#css,
+#cssperc {
+  color: #264de4;
 }
-#js,#jsperc{
-  color:#F7DF1E;
+#js,
+#jsperc {
+  color: #f7df1e;
 }
-#node,#nodeperc{
-  color:#68a063;
+#node,
+#nodeperc {
+  color: #68a063;
 }
-#exp,#expperc{
-  color:#F7DF1E;
+#exp,
+#expperc {
+  color: #f7df1e;
 }
-#db,#dbperc{
-  color: #00684A;
+#db,
+#dbperc {
+  color: #00684a;
 }
-#react,#reactperc{
-  color:#61DBFB;
+#react,
+#reactperc {
+  color: #61dbfb;
 }
-#angular,#angularperc{
-  color:#a6120d;
+#angular,
+#angularperc {
+  color: #a6120d;
 }
-#vue,#vueperc{
-  color:#41B883;
+#vue,
+#vueperc {
+  color: #41b883;
 }
-#sql,#sqlperc{
-  color:#F29111;
+#sql,
+#sqlperc {
+  color: #f29111;
 }
-#post,#postperc{
-  color:#0064a5;
+#post,
+#postperc {
+  color: #0064a5;
+}
+/*skill section endings here*/
+#projects {
+  margin:8rem auto;
+  width: 80%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "heading-section heading-section"
+    "project-contents project-contents";
+  gap:40px;  
+}
+.heading-section {
+  grid-area: heading-section;
+}
+.heading-section h2 {
+  text-align: center;
+  font-size: 5rem;
+  padding: 2rem;
+  color: #ffbd39;
+}
+.project-contents {
+  grid-area: project-contents;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "project-image1 project-image2"
+    "project-image3 project-image4";
+  gap:30px;  
+}
+.project-image1 {
+  grid-area: project-image1;
+  margin:auto;
+  height: 250px;
+  width: 80%;
+  border: 2px solid black;
+}
+.project-image1>img,.project-image2>img,.project-image3>img,.project-image4>img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.project-image2 {
+  grid-area: project-image2;
+  margin:auto;
+  height: 250px;
+  width: 80%;
+  border: 2px solid black;
+}
+.project-image3 {
+  grid-area: project-image3;
+  margin:auto;
+  height: 250px;
+  width: 80%;
+  border: 2px solid black;
+}
+.project-image4 {
+  grid-area: project-image4;
+  margin:auto;
+  height: 250px;
+  width: 80%;
+  border: 2px solid black;
 }
