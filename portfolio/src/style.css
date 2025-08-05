@@ -8,6 +8,7 @@
 }
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 body {
   background-color: #000000;
@@ -767,7 +768,7 @@ textarea {
 }
 /*skill section endings here*/
 #projects {
-  margin:8rem auto;
+  margin: 8rem auto;
   width: 80%;
   height: auto;
   display: grid;
@@ -776,7 +777,7 @@ textarea {
   grid-template-areas:
     "heading-section heading-section"
     "project-contents project-contents";
-  gap:40px;  
+  gap: 40px;
 }
 .heading-section {
   grid-area: heading-section;
@@ -795,38 +796,139 @@ textarea {
   grid-template-areas:
     "project-image1 project-image2"
     "project-image3 project-image4";
-  gap:30px;  
+  gap: 30px;
 }
 .project-image1 {
   grid-area: project-image1;
-  margin:auto;
+  margin: auto;
   height: 250px;
   width: 80%;
   border: 2px solid black;
 }
-.project-image1>img,.project-image2>img,.project-image3>img,.project-image4>img{
+.project-image1 > img,
+.project-image2 > img,
+.project-image3 > img,
+.project-image4 > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 .project-image2 {
   grid-area: project-image2;
-  margin:auto;
+  margin: auto;
   height: 250px;
   width: 80%;
   border: 2px solid black;
 }
 .project-image3 {
   grid-area: project-image3;
-  margin:auto;
+  margin: auto;
   height: 250px;
   width: 80%;
   border: 2px solid black;
 }
 .project-image4 {
   grid-area: project-image4;
-  margin:auto;
+  margin: auto;
   height: 250px;
   width: 80%;
   border: 2px solid black;
 }
+/*Certificate section starts here*/
+#certificates {
+  width: 80%;
+  height: auto;
+  display: grid;
+  margin: 80px auto;
+  border: 1px solid black;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "certificate-heading certificate-heading"
+    "certificates-contents certificates-contents";
+  gap: 3rem;
+}
+.certificate-heading {
+  grid-area: certificate-heading;
+}
+.certificates-contents {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  grid-area: certificates-contents;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    " certificate-img1 certificate-img2"
+    "certificate-img3 certificate-img4";
+  gap: 30px;
+}
+.certificate-heading h2 {
+  text-align: center;
+  padding: 20px;
+  font-size: 5rem;
+  color: #ffbd39;
+}
+.certificate-img1 {
+  grid-area: certificate-img1;
+  height: 250px;
+  width: 80%;
+}
+.certificate-img2 {
+  grid-area: certificate-img2;
+  height: 250px;
+  width: 80%;
+}
+.certificate-img3 {
+  grid-area: certificate-img3;
+  height: 250px;
+  width: 80%;
+}
+.certificate-img4 {
+  grid-area: certificate-img4;
+  height: 250px;
+  width: 80%;
+}
+.certificate-img1,
+.certificate-img2,
+.certificate-img3,
+.certificate-img4 {
+  margin: auto;
+}
+.certificate-img1 img,
+.certificate-img2 img,
+.certificate-img3 img,
+.certificate-img4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*certificate section ends here*/
+/*footer section starts here*/
+footer{
+  background-color:#41b883;
+  width:100%;
+  height:auto;
+  display:grid;
+  grid-template-columns:1fr;
+  grid-template-rows:auto;
+  grid-template-areas:"footer-top"
+                      "footer-bottom";
+  gap:2rem;                    
+}
+.footer-top{
+    grid-area:footer-top;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+}
+.footer-references,.footer-links,.footer-services,.footer-questions{
+border:2px solid black;
+padding:2rem;
+text-align:center;
+}
+.footer-bottom{
+    grid-area:footer-bottom;
+}
+/*foooter section ends here*/
