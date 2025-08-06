@@ -21,19 +21,27 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- animate style -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- header section starts here -->
     <header>
-      <h2><a href="#">Hariprasad</a></h2>
+      <h2><a href="#">Portfolio</a></h2>
       <nav id="navbar">
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#">Resume</a></li>
           <li><a href="#service">Service</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#">Projects</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -48,12 +56,14 @@
         <div class="image-section">
           <img
             src="images/hari.jpeg"
-            class="main"
+            class="main animate__animated animate__slideInLeft"
             alt="This is picture of my logo"
           />
         </div>
         <div class="content-section">
-          <h1>I'm <span>Hariprasad</span></h1>
+          <h1 class="animate__animated animate__fadeInTopRight">
+            I'm <span>Hariprasad</span>
+          </h1>
           <p>A Freelance Web developer</p>
           <button id="hiring">Hire me</button>
           <button id="work">Works</button>
@@ -110,32 +120,60 @@
           <h2>Services</h2>
         </div>
         <div class="service-content">
-          <div class="service service1">
+          <div
+            class="service service1"
+            id="webdesign"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
             <div class="line"></div>
             <h3>Web design</h3>
             <i class="fa-solid fa-palette design-icon"></i>
           </div>
-          <div class="service service2">
+          <div
+            class="service service2"
+            id="webdevelopment"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
             <div class="line"></div>
             <h3>Web Development</h3>
             <i class="fa-solid fa-code code-icon"></i>
           </div>
-          <div class="service service3">
+          <div
+            class="service service3"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
             <div class="line"></div>
             <h3>Photography</h3>
             <i class="fa-solid fa-camera photo-icon"></i>
           </div>
-          <div class="service service4">
+          <div
+            class="service service4"
+            id="webdesign"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
             <div class="line"></div>
             <h3>App development</h3>
             <i class="fa-solid fa-code code-icon"></i>
           </div>
-          <div class="service service5">
+          <div
+            class="service service5"
+            id="webdevelopment"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
             <div class="line"></div>
             <h3>Data analyst</h3>
             <i class="fa-solid fa-chart-simple data-icon"></i>
           </div>
-          <div class="service service6">
+          <div
+            class="service service6"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
             <div class="line"></div>
             <h3>Software Testing</h3>
             <i class="fa-solid fa-microscope test-icon"></i>
@@ -147,7 +185,7 @@
           <h2>Skills</h2>
         </div>
         <div class="skills-container">
-          <div class="card1">
+          <div class="card1" data-aos="fade-up" data-aos-duration="700">
             <div class="frontface">
               <h3>frontend development</h3>
               <span class="proficency">90%</span>
@@ -176,7 +214,7 @@
               </div>
             </div>
           </div>
-          <div class="card2">
+          <div class="card2" data-aos="fade-up" data-aos-duration="700">
             <div class="frontface">
               <h3>Backend development</h3>
               <span class="proficency">70%</span>
@@ -205,7 +243,7 @@
               </div>
             </div>
           </div>
-          <div class="card3">
+          <div class="card3" data-aos="fade-up" data-aos-duration="700">
             <div class="frontface">
               <h3>frameworks</h3>
               <span class="proficency">80%</span>
@@ -234,7 +272,7 @@
               </div>
             </div>
           </div>
-          <div class="card4">
+          <div class="card4" data-aos="fade-up" data-aos-duration="700">
             <div class="frontface">
               <h3>Databases</h3>
               <span class="proficency">75%</span>
@@ -270,16 +308,32 @@
           <h2>Projects</h2>
         </div>
         <div class="project-contents">
-          <div class="project-image1">
+          <div
+            class="project-image1"
+            data-aos="fade-right"
+            data-aos-duration="700"
+          >
             <img src="images/projectimg1.jpg" alt="" />
           </div>
-          <div class="project-image2">
+          <div
+            class="project-image2"
+            data-aos="fade-left"
+            data-aos-duration="700"
+          >
             <img src="images/projectimg2.jpg" alt="" />
           </div>
-          <div class="project-image3">
+          <div
+            class="project-image3"
+            data-aos="fade-right"
+            data-aos-duration="700"
+          >
             <img src="images/projectimg3.jpg" alt="" />
           </div>
-          <div class="project-image4">
+          <div
+            class="project-image4"
+            data-aos="fade-left"
+            data-aos-duration="700"
+          >
             <img src="images/projectimg4.jpg" alt="" />
           </div>
         </div>
@@ -289,21 +343,37 @@
           <h2>Certificates</h2>
         </div>
         <div class="certificates-contents">
-          <div class="certificate-img1">
+          <div
+            class="certificate-img1"
+            data-aos="fade-right"
+            data-aos-duration="700"
+          >
             <img src="images/projectimg1.jpg" alt="" />
           </div>
-          <div class="certificate-img2">
+          <div
+            class="certificate-img2"
+            data-aos="fade-left"
+            data-aos-duration="700"
+          >
             <img src="images/projectimg2.jpg" alt="" />
           </div>
-          <div class="certificate-img3">
+          <div
+            class="certificate-img3"
+            data-aos="fade-right"
+            data-aos-duration="700"
+          >
             <img src="images/projectimg3.jpg" alt="" />
           </div>
-          <div class="certificate-img4">
+          <div
+            class="certificate-img4"
+            data-aos="fade-left"
+            data-aos-duration="700"
+          >
             <img src="images/projectimg4.jpg" alt="" />
           </div>
         </div>
       </section>
-      <section id="contact">
+      <section id="contact" data-aos="fade-right" data-aos-duration="700">
         <div class="contact-heading">
           <h2>Get in Touch</h2>
         </div>
@@ -379,7 +449,7 @@
     </main>
     <!-- Main section ends here -->
     <!-- Footer section starts here -->
-    <footer>
+    <footer data-aos="fade-left" data-aos-duration="700">
       <div class="footer-top">
         <div class="footer-references">
           <div class="reference-heading">
@@ -387,9 +457,13 @@
           </div>
           <div class="referenece-icons">
             <i class="fa-brands fa-github git-icon"></i>
-            <p>Github</p>
+            <p><a href="https://github.com/Hariprasad1303">Github</a></p>
             <i class="fa-brands fa-linkedin ln-icon"></i>
-            <p>LinkedIn</p>
+            <p>
+              <a href="https://www.linkedin.com/in/hariprasad-v-v-10a46a245/"
+                >LinkedIn</a
+              >
+            </p>
           </div>
         </div>
         <div class="footer-links">
@@ -409,12 +483,11 @@
             <h2>Services</h2>
           </div>
           <div class="footer-services-link">
-            <a href="#">Web Design</a>
-            <a href="#">Web Development</a>
-            <a href="#">Photography</a>
-            <a href="#">App development</a>
-            <a href="#">Data analysis</a>
-            <a href="#">Software Testing</a>
+            <a href="#webdesign">Web Design</a>
+            <a href="#webdevelopment">Web Development</a>
+            <a href="#appdevelopment">App development</a>
+            <a href="#analyst">Data analysis</a>
+            <a href="#testing">Software Testing</a>
           </div>
         </div>
         <div class="footer-questions">
@@ -422,16 +495,24 @@
             <h2>Any questions</h2>
           </div>
           <div class="per-contact">
+            <i class="fa-solid fa-location-dot location-icons"></i>
             <p id="footer-loc">Ernakulam,Kerala</p>
+            <i class="fa-solid fa-phone phone-icons"></i>
             <p id="footer-number">+91 8590844298</p>
+            <i class="fa-regular fa-envelope email-icons"></i>
+
             <p id="footer-eemail">hariprasadvv2505@gmail.com</p>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p id="copyright">Cpoyright&copy;2025 All rights reserved</p>
+        <p id="copyright">Copyright&copy;2025 All rights reserved</p>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- Footer section ends here -->
   </body>
 </html>
