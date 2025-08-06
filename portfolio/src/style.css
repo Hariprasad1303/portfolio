@@ -27,6 +27,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  backdrop-filter: blur(140px);
 }
 h2 a {
   text-transform: uppercase;
@@ -906,29 +907,82 @@ textarea {
 }
 /*certificate section ends here*/
 /*footer section starts here*/
-footer{
-  background-color:#41b883;
-  width:100%;
-  height:auto;
-  display:grid;
-  grid-template-columns:1fr;
-  grid-template-rows:auto;
-  grid-template-areas:"footer-top"
-                      "footer-bottom";
-  gap:2rem;                    
+footer {
+  margin:80px auto;
+  background-color: #41b883;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "footer-top"
+    "footer-bottom";
+  gap: 2rem;
 }
-.footer-top{
-    grid-area:footer-top;
-    display:flex;
-    justify-content: space-around;
-    align-items:center;
+.footer-top {
+  grid-area: footer-top;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding:3rem;
+}
+.footer-references,
+.footer-links,
+.footer-services,
+.footer-questions {
+  border: 2px solid black;
+  padding: 2rem;
+  text-align: center;
 }
 .footer-references,.footer-links,.footer-services,.footer-questions{
-border:2px solid black;
-padding:2rem;
-text-align:center;
+  height:300px;
 }
-.footer-bottom{
-    grid-area:footer-bottom;
+.reference-heading,.footer-links-heading,.footer-services-heading,.footer-question-heading{
+  font-size:1.8rem;
+  color:white;
+  margin-bottom:4.4rem;
+}
+.git-icon,.ln-icon{
+  font-size:4rem;
+  color:#ffbd39;
+  margin-bottom:1rem;
+  transition:0.4s ease-in;
+}
+.git-icon:hover{
+  background-color:black;
+  padding:.3rem .4rem;
+  color:white;
+  font-size: 3rem;
+  border-radius: 8px;
+}
+.ln-icon:hover{
+  background-color: white;
+  color: #264de4;
+  font-size: 3rem;
+  padding:.3rem .4rem;
+  border-radius: 8px;
+}
+.footer-references p{
+  font-size:2rem;
+  font-weight:600;
+  margin-bottom:3rem;
+  color:white;
+}
+.links-section{
+  display:flex;
+  flex-direction:column;
+}
+.links-section a{
+  color:white;
+  font-size:2rem;
+  margin-bottom: 1.6rem;
+}
+.links-section a:hover{
+  color:#ffbd39;
+  text-decoration:underline;
+}
+.footer-bottom {
+  grid-area: footer-bottom;
 }
 /*foooter section ends here*/
