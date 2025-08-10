@@ -29,11 +29,21 @@ header {
   justify-content: space-between;
   backdrop-filter: blur(140px);
 }
-h2 a {
-  text-transform: uppercase;
+#check {
+  display: none;
+}
+.icons {
+  position: absolute;
+  right: 5%;
+  font-size: 2.4rem;
+  cursor: pointer;
+  display: none;
+}
+h2 {
+  text-transform: capitalize;
   color: white;
-  margin-left: 60px;
-  font-size: 2.8rem;
+  margin-left: 6rem;
+  font-size: 2.6rem;
   font-weight: bold;
 }
 /*navbar css starts here*/
@@ -48,10 +58,10 @@ h2 a {
   font-size: 2rem;
   font-family: "Poppins", Arial, sans-serif;
   margin: 2rem;
-  transition:0.4s ease-in;
+  transition: 0.4s ease-in;
 }
 #navbar li:hover a {
-  color:#ffbd39;
+  color: #ffbd39;
 }
 .btn {
   background-color: #000000;
@@ -144,10 +154,15 @@ main {
   font-weight: 600;
   text-transform: uppercase;
 }
+#work a {
+  color: white;
+}
+#work a:hover {
+  color: black;
+}
 #work:hover {
   background-color: #ffbd39;
   color: #000000;
-  border: 2px solid white;
   font-weight: 600;
 }
 #hiring:hover {
@@ -675,6 +690,7 @@ textarea {
   height: 1rem;
   background-color: black;
   bottom: 0;
+  border-radius: 0.5rem;
 }
 .htmlbar {
   width: 90%;
@@ -921,6 +937,7 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: nowrap;
   padding: 3rem;
 }
 .footer-references,
@@ -939,7 +956,7 @@ footer {
 .reference-heading,
 .footer-links-heading,
 .footer-services-heading,
-.footer-question-heading {
+.footer-question-heading{
   font-size: 1.8rem;
   color: white;
   margin-bottom: 2.4rem;
@@ -1010,3 +1027,117 @@ footer {
   font-size: 2rem;
 }
 /*foooter section ends here*/
+/* Media queries for medium screen */
+@media (max-width: 760px) {
+  header h2 {
+    display: none;
+  }
+  .icons {
+    display: flex; /* Show icons */
+  }
+
+  #close-icon {
+    display: none; /* Hide close icon initially */
+  }
+
+  /* When menu is toggled on (checkbox checked) */
+  #check:checked ~ .icons #menu-icon {
+    display: none;
+  }
+  #check:checked ~ .icons #close-icon {
+    display: block;
+  }
+  #home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+  }
+  .image-section {
+    margin-bottom: 0rem;
+  }
+  .content-section {
+    transform: translateX(8rem);
+  }
+  #about {
+    grid-template-columns: 1fr;
+    margin: 4rem auto;
+  }
+  .image-about {
+    display: none;
+  }
+  .heading1 {
+    margin-bottom: 2rem;
+    padding: 2rem;
+  }
+  #service {
+    grid-template-columns: 1fr;
+  }
+  .service-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .service h3 {
+    padding: 3rem 0rem;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  #skills {
+    margin: 0rem auto;
+  }
+  .frontface h3 {
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+  }
+  .proficency {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+  }
+  .flip {
+    font-size: 0.4rem;
+  }
+  .barpercent,
+  .basehead {
+    font-size: 1.6rem;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  .btn {
+    display: none;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "footer-top"
+      "footer-bottom";
+  }
+  .footer-top {
+    display: grid;
+    grid-area: footer-top;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap:20px;                     
+  }
+  .footer-references,
+  .footer-links,
+  .footer-services,
+  .footer-questions {
+    padding: 1.5rem;
+    text-align: center;
+    border: 1px solid #ffbd39;
+  }
+  footer h2{
+    margin-left:1rem;
+  }
+}

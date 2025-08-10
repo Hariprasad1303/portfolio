@@ -34,7 +34,15 @@
   <body>
     <!-- header section starts here -->
     <header>
-      <h2><a href="#">Portfolio</a></h2>
+      <h2>Portfolio</h2>
+      <!-- Checkbox -->
+      <input type="checkbox" id="check">
+      <label for="check" class="icons">
+        <!-- Menu icons -->
+        <i class="fa-solid fa-bars " id="menu-icon"></i>
+        <!-- Close-icons -->
+        <i class="fa-solid fa-xmark" id="close-icon"></i>
+      </label>
       <nav id="navbar">
         <ul>
           <li><a href="#home">Home</a></li>
@@ -42,6 +50,7 @@
           <li><a href="#service">Service</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#certificates">Certificates</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -66,7 +75,7 @@
           </h1>
           <p>A Freelance Web developer</p>
           <button id="hiring">Hire me</button>
-          <button id="work">Works</button>
+          <button id="work"><a href="#projects">Works</a></button>
         </div>
       </section>
       <section id="about" data-aos="fade-up" data-aos-duration="700">
@@ -184,12 +193,16 @@
         <div class="skills-heading" data-aos="fade-up" data-aos-duration="700">
           <h2>Skills</h2>
         </div>
-        <div class="skills-container" data-aos="fade-up" data-aos-duration="700">
+        <div
+          class="skills-container"
+          data-aos="fade-up"
+          data-aos-duration="700"
+        >
           <div class="card1">
             <div class="frontface">
               <h3>frontend development</h3>
               <span class="proficency">90%</span>
-              <p>(Hover to slip)</p>
+              <p class="flip">(Hover to slip)</p>
             </div>
             <div class="backface">
               <div class="progressbar">
@@ -218,7 +231,7 @@
             <div class="frontface">
               <h3>Backend development</h3>
               <span class="proficency">70%</span>
-              <p>(Hover to Flip)</p>
+              <p class="flip">(Hover to Flip)</p>
             </div>
             <div class="backface">
               <div class="progressbar">
@@ -247,7 +260,7 @@
             <div class="frontface">
               <h3>frameworks</h3>
               <span class="proficency">80%</span>
-              <p>(Hover to Flip)</p>
+              <p class="flip">(Hover to Flip)</p>
             </div>
             <div class="backface">
               <div class="progressbar">
@@ -276,7 +289,7 @@
             <div class="frontface">
               <h3>Databases</h3>
               <span class="proficency">75%</span>
-              <p>(Hover to Flip)</p>
+              <p class="flip">(Hover to Flip)</p>
             </div>
             <div class="backface">
               <div class="progressbar">
@@ -339,7 +352,11 @@
         </div>
       </section>
       <section id="certificates">
-        <div class="certificate-heading" data-aos="fade-up" data-aos-duration="700">
+        <div
+          class="certificate-heading"
+          data-aos="fade-up"
+          data-aos-duration="700"
+        >
           <h2>Certificates</h2>
         </div>
         <div class="certificates-contents">
@@ -377,7 +394,11 @@
         <div class="contact-heading" data-aos="fade-up" data-aos-duration="700">
           <h2>Get in Touch</h2>
         </div>
-        <div class="contact-left-section" data-aos="fade-right" data-aos-duration="700">
+        <div
+          class="contact-left-section"
+          data-aos="fade-right"
+          data-aos-duration="700"
+        >
           <h3>Contact information</h3>
           <p>Feel free to reach out for any questions or oppurtunities.</p>
           <div class="location">
@@ -408,12 +429,14 @@
             <div class="social-media-icons">
               <i class="fa-brands fa-github github"></i>
               <i class="fa-brands fa-linkedin linkedin"></i>
-              <i class="fa-brands fa-twitter twitter"></i>
-              <i class="fa-brands fa-instagram instagram"></i>
             </div>
           </div>
         </div>
-        <div class="contact-right-section" data-aos="fade-right" data-aos-duration="700">
+        <div
+          class="contact-right-section"
+          data-aos="fade-right"
+          data-aos-duration="700"
+        >
           <form action="#">
             <!-- Name -->
             <div class="element">
